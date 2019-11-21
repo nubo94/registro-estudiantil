@@ -6,6 +6,15 @@
 **Dependencia**
 - Instalar  [MongooseDB](https://mongoosejs.com/) como gestionador de la base de datos.
 
+**Tecnologías usadas**
+- body-parser:^1.18.2,
+- ejs: ^2.5.7,
+- express: ^4.16.2,
+- express-session: ^1.15.6,
+- mongoose: ^5.0.4,
+- morgan: ^1.9.0,
+- passport: ^0.4.0,
+
 Para hacer uso de la aplicación, solo descarga el repositorio y hacer doble click en el ejecutador llamado **registroestudianteswin.exe**, este repositorio tiene la version para windows 7 en adelante.
 
 **Desarrolladores**
