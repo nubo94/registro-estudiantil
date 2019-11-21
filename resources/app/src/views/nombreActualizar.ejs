@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<% include partials/head %>
+</head>
+
+<body>
+	<% include partials/header %>
+		<% include partials/navbar %>
+
+			<section class="datosEB">
+				<div class="row">
+					<div class="col s11 m11 l11 push-s1 push-m1 push-l1 center-align">
+						<h4 class="title_update">Estas actualizando los datos de <span class="nombreUpdate"><%= nombre %></span></h4>
+					</div>
+					<div class="col s11 m11 l11 push-s1 push-m1 push-l1">
+						<h4 class="title_form">Datos Personales del estudiante</h4>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<form class="col s12 m12 l12" method="post" action="/actualizar/<%= id %>">
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<h6>Datos básicos</h6>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s4">
+									<input id="nombreInput" type="text" class="validate" name="nombre" value="<%= nombre %>">
+									<label for="nombreInput">Nombre</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="apellido" type="text" class="validate" name="apellido" value="<%= apellido %>">
+									<label for="apellido">Apellido</label>
+								</div>
+								<div class="input-field col s1">
+									<input id="sangre" type="text" class="validate" name="sangre" value="<%= sangre %>">
+									<label for="sangre">TS</label>
+								</div>
+								<div class="input-field col s3 file-field input-field">
+									<div class="btn">
+										<span>File</span>
+										<input type="file">
+									</div>
+									<div class="file-path-wrapper">
+										<input class="file-path validate" type="text" placeholder="Imagen" name="imagen" value="<%= imagen %>">
+									</div>
+								</div>
+							</div>
+
+							<!-- Datos personales -->
+							<div class="row">
+								<div class="input-field col s4">
+									<input id="fechaNac" type="text" class="validate" placeholder="10/02/1990" name="fechaNac" value="<%= fechaNac %>">
+									<label for="fechaNac">Fecha de nacimiento</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="edad" type="text" class="validate" name="edad" value="<%= edad %>">
+									<label for="edad">Edad</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="nacionalidad" type="text" class="validate" name="nacionalidad" value="<%= nacionalidad %>">
+									<label for="nacionalidad">Nacionalidad</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="lugarNacimiento" type="text" class="validate" name="lugarNacimiento" value="<%= lugarNacimiento %>">
+									<label for="lugarNacimiento">Lugar de nacimiento</label>
+								</div>
+								<div class="input-field col s4">
+									<input id="residencia" type="text" class="validate" name="residencia" value="<%= residencia %>">
+									<label for="residencia">Residencia</label>
+								</div>
+								<div class="input-field col s2">
+									<input id="celular" type="text" class="validate" placeholder="Célular" name="celular" value="<%= celular %>">
+									<label for="celular">Número Teléfonico</label>
+								</div>
+								<div class="input-field col s2">
+									<input id="telResidencial" type="text" class="validate" placeholder="Residencia" name="telResidencial" value="<%= telResidencial %>">
+									<label for="telResidencial">Número Teléfonico</label>
+								</div>
+							</div>
+
+
+
+							<div class="row">
+								<div class="col s11 m11 l11">
+									<h4 class="title_form">Datos del estudiante por parte de la institución</h4>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="row">
+									<div class="col s12 m12 l12">
+										<h6>Datos Por parte de la institución</h6>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s4">
+										<input id="matricula" type="text" class="validate" name="matricula" value="<%= matricula %>">
+										<label for="matricula">Matrícula</label>
+									</div>
+									<div class="input-field col s4">
+										<input id="estadoCivil" type="text" class="validate" name="estadoCivil" value="<%= estadoCivil %>">
+										<label for="estadoCivil">Estado Cívil</label>
+									</div>
+									<div class="input-field col s4">
+										<input id="genero" type="text" class="validate" name="genero" value="<%= genero %>">
+										<label for="genero">Genero</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s4">
+										<input id="carrera" type="text" class="validate" name="carrera" value="<%= carrera %>">
+										<label for="carrera">Carrera</label>
+									</div>
+									<div class="input-field col s4">
+										<input id="materiasCursando" type="text" class="validate" name="materiasCursando" value="<%= materiasCursando %>">
+										<label for="materiasCursando">Materias cursando</label>
+									</div>
+									<div class="input-field col s4">
+										<input id="tanda" type="text" class="validate" name="tanda" value="<%= tanda %>">
+										<label for="tanda">Tanda</label>
+									</div>
+									<div class="input-field col s4">
+										<input id="estado" type="text" class="validate" name="estado" value="<%= estado %>">
+										<label for="estado">Estado</label>
+									</div>
+								</div>
+								<div class="col s12 m12 l12 right-align">
+									<button class="btn waves-effect btn_submit" type="submit" name="action" onclick="Materialize.toast('¡Actualizados correctamente!', 1000)">Actualizar
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<% include partials/scripts %>
+</body>
+</html>
+

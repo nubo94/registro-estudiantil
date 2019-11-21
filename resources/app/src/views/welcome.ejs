@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/head %>
+</head>
+
+<body>
+    <% include partials/header %>
+        <% include partials/navbar %>
+            <section class="center-align section_bienvenido_home">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <h1 class="bienvenido_home">Bienvenido
+                            <span class="capi colorNameWelcome">
+                                <%= user.nombre %>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s10 m10 l10 push-s1 push-m1 push-l1">
+                        <p class="parr_content_home">La aplicación ha sido desarrollada por los estudiantes de termino en al universidad Dominicana O&M,
+                            por los integrantes: <b>Yank Carlos R. Espinal</b>, <b>Raudin Moreno</b>, <b>Azarias</b>, <b>Reyna</b> y <b>Santiago Acosta</b>. La aplicación
+                            tiene un enfoque de automatizar lo que es el registro de los estudiante dentro de dicha institución,
+                            la aplicación es muy sencilla de utiliazar y bastante intuitiva, basta con echar un viztaso en
+                            su funcionalidad para comprobarlo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row center-align content_img_text">
+                    <div class="col s4">
+                        <img class="responsive-img img_welcome" src="../../img/images/imagesApp/welcome1.png" alt="rectangle">
+                    </div>
+                    <div class="col s4">
+                        <img class="responsive-img img_welcome" src="../../img/images/imagesApp/welcome2.png" alt="rectangle">
+                    </div>
+                    <div class="col s4">
+                        <img class="responsive-img img_welcome" src="../../img/images/imagesApp/welcome3.png" alt="rectangle">
+                    </div>
+                </div>
+
+                <div class="row center-align content_img_text col_img">
+                    <div class="col s4">
+                        <h4 class="title_img">Misión</h4>
+                        <h6 class="subtitle_img">Crear el mejor producto, no causar daños innecesarios, utilizar el negocio para inspirar e implementar soluciones para el problema de automatización.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h4 class="title_img">Integridad</h4>
+                        <h6 class="subtitle_img">Nunca alteraremos el software para aprovecharnos de los datos de nuestros estudiantes, nunca compartiremos la información con otras entidades.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h4 class="title_img">Responsabilidad</h4>
+                        <h6 class="subtitle_img">Somos responsable del manejo de la información de nuestros estudiantes, como también del buen funcionamineto de dicha plataforma.</h6>
+                    </div>
+                </div>
+            </section>
+
+
+            <% include partials/scripts %>
+</body>
+
+</html>

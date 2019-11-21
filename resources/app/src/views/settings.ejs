@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<% include partials/head %>
+</head>
+
+<body>
+	<% include partials/header %>
+		<% include partials/navbar %>
+			<div class="container formPerfil">
+				<div class="row">
+					<div class="col s11 m11 l11 push-s1 push-m1 push-l1">
+						<h4 class="title_form">Datos del usuario</h4>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<form class="col s12" method="post" action="/settings/<%= id %>">
+							<div class="row">
+								<div class="col s12 m12 l12">
+									<h6>Datos a introducir para la configruación de <b><span class="capi"><%= nombre %></span></b></h6>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s4 m4 l4">
+									<input id="nombre" type="text" class="validate tooltipped" name="nombre" data-position="top" data-delay="50" data-tooltip="Por favor, introducir tu nombre completo" value="<%= nombre %>">
+									<label for="nombre">Nombre</label>
+								</div>
+								<div class="input-field col s4 m4 l4">
+									<input id="usuario" type="text" class="validate tooltipped" name="usuario" data-position="top" data-delay="50" data-tooltip="Por favor, introducir un nombre de usuario" value="<%= usuario %>">
+									<label for="usuario">Usuario</label>
+								</div>
+								<div class="input-field col s4 m4 l4 fileSingIn">
+									<div class="file-field input-field">
+										<div class="btn">
+											<span>File</span>
+											<input name="imagen" type="file" class="tooltipped" data-position="top" data-delay="50" data-tooltip="Por favor, introducir tu imagen de perfil" value="<%= imagen %>">
+										</div>
+										<div class="file-path-wrapper">
+											<input class="file-path validate" type="text" value="<%= user.imagen %>">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col s4 m4 l4">
+									<input id="pais" type="text" class="validate tooltipped" name="pais" data-position="top" data-delay="50" data-tooltip="Por favor, introducir el país en donde vive" value="<%= pais %>">
+									<label for="pais">País</label>
+								</div>
+								<div class="input-field col s4 m4 l4">
+									<input id="ciudad" type="text" class="validate tooltipped" name="ciudad" data-position="top" data-delay="50" data-tooltip="Por favor, introducir el nombre de la ciudad en donde vive" value="<%= ciudad %>">
+									<label for="ciudad">Ciudad</label>
+								</div>
+								<div class="input-field col s4 m4 l4">
+									<input id="residencia" type="text" class="validate tooltipped" name="residencia" data-position="top" data-delay="50" data-tooltip="Por favor, introducir dónde se encuentra viviendo en estos momentos" value="<%= residencia %>">
+									<label for="residencia">Residencia</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col s4 m4 l4 push-s8 push-m8 push-l8 right-align btnUsuario">
+									<button class="btn waves-effect btn_submit blue colorBtnUser" type="submit" name="action" onclick="Materialize.toast('¡Usuario actualizado!', 1000)">Actualizar
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<% include partials/scripts %>
+</body>
+
+</html>

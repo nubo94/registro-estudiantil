@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include partials/head %>
+</head>
+
+<body>
+    <% include partials/header %>
+        <% include partials/navbar %>
+            <section class="center-align section_bienvenido_home">
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <h1 class="bienvenido_home">Bienvenido
+                            <span class="capi colorNameWelcome">
+                                <%= user.nombre %>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s10 m10 l10 push-s1 push-m1 push-l1">
+                        <p class="parr_content_home">La aplicación ha sido desarrollada por los estudiantes de termino en al universidad Dominicana O&M,
+                            por los integrantes: Yank Carlos R. Espinal, Raudin Moreno, Azarias, Reyna y Santiago. La aplicación
+                            tiene un enfoque de automatizar lo que es el registro de los estudiante dentro de dicha institución,
+                            la aplicación es muy sencilla de utiliazar y bastante intuitiva, basta con echar un viztaso en
+                            su funcionalidad para comprobarlo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row center-align content_img_text">
+                    <div class="col s4">
+                        <img class="responsive-img img_welcome" src="../../img/images/imagesApp/welcome1.png" alt="rectangle">
+                    </div>
+                    <div class="col s4">
+                        <img class="responsive-img img_welcome" src="../../img/images/imagesApp/welcome2.png" alt="rectangle">
+                    </div>
+                    <div class="col s4">
+                        <img class="responsive-img img_welcome" src="../../img/images/imagesApp/welcome3.png" alt="rectangle">
+                    </div>
+                </div>
+
+                <div class="row center-align content_img_text col_img">
+                    <div class="col s4">
+                        <h4 class="title_img">Lorem</h4>
+                        <h6 class="subtitle_img">Unde earum sint est dolor illum deleniti culpa quam officia dolorem dolores consequatur facere inventore
+                            sit, magnam tenetur nemo natus, corporis tempore.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h4 class="title_img">Lorem</h4>
+                        <h6 class="subtitle_img">Unde earum sint est dolor illum deleniti culpa quam officia dolorem dolores consequatur facere inventore
+                            sit, magnam tenetur nemo natus, corporis tempore.</h6>
+                    </div>
+                    <div class="col s4">
+                        <h4 class="title_img">Lorem</h4>
+                        <h6 class="subtitle_img">Unde earum sint est dolor illum deleniti culpa quam officia dolorem dolores consequatur facere inventore
+                            sit, magnam tenetur nemo natus, corporis tempore.</h6>
+                    </div>
+                </div>
+            </section>
+
+
+            <% include partials/scripts %>
+</body>
+
+</html>

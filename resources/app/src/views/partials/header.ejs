@@ -1,0 +1,122 @@
+<header class="z-depth-0">
+	<nav class="row z-depth-0">
+		<nav class="col s12 m12 l12 menu_header z-depth-0">
+			<div class="nav-rapper">
+					<img src="../../img/icon/logo/logo.png" class="logo" alt="student">
+				<ul class="right lista_menu">
+					<li>
+						<img class="photo_person_welcome" src="../../img/perfil/<%= user.imagen %>">
+					</li>
+					<li>
+						<ul id="dropdown2" class="dropdown-content options_menu">
+							<li>
+								<a data-activates="slide-out" class="button-collapse perfil" href="#!">
+									<img class="icon_setting" src="../../img/icon/icon_app/user.svg" alt="user">
+									<span class="text_settings">Perfil</span>
+								</a>
+							</li>
+							<li>
+								<a class="modal-trigger" href="/settings/<%= user._id %>">
+									<img class="icon_setting" src="../../img/icon/icon_app/settings.svg" alt="settings">
+									<span class="text_settings">Ajustes</span>
+								</a>
+							</li>
+							<li>
+								<a href="/login" class="exit">
+									<img class="icon_setting" src="../../img/icon/icon_app/log-out.svg" alt="salir">
+									<span class="text_settings">Salir</span>
+								</a>
+							</li>
+						</ul>
+						<a class="dropdown-button options_menu" href="#!" data-activates="dropdown2">
+							<span class="capi">
+								<%= user.nombre %>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</nav>
+	<div id="particles_menu-js"></div>
+</header>
+
+<!-- Perfil -->
+<ul id="slide-out" class="side-nav">
+	<li>
+		<div class="user-view headerPerfil">
+			<div class="background">
+				<img src="../../img/images/nature.jpg">
+			</div>
+			<br>
+			<br>
+			<a href="#!user">
+				<img class="circle dataPerfil" src="../../img/perfil/<%= user.imagen %>">
+			</a>
+			<a href="#!name">
+				<span class="white-text name dataPerfil">
+					<span class="mayus">
+						<%= user.nombre %>
+					</span>
+				</span>
+			</a>
+			<a href="#!name">
+				<span class="white-text name dataPerfil">
+					<span class="mayus">
+						<%= user.usuario %>
+					</span>
+				</span>
+			</a>
+			<a href="#!email">
+				<span class="white-text email dataPerfil">
+					<span class="mayus">
+						<%= user.email %>
+					</span>
+				</span>
+			</a>
+		</div>
+	</li>
+	<li>
+		<a class="dataPerfilBasic" href="#!">
+			<b>País: </b>
+			<span class="capi">
+				<%= user.pais %>
+			</span>
+		</a>
+	</li>
+	<li>
+		<a class="dataPerfilBasic" href="#!">
+			<b>Ciudad: </b>
+			<span class="capi">
+				<%= user.ciudad %>
+			</span>
+		</a>
+	</li>
+	<li>
+		<a class="dataPerfilBasic" href="#!">
+			<b>Residencia: </b>
+			<span class="capi">
+				<%= user.residencia %>
+			</span>
+		</a>
+	</li>
+	<li>
+		<div class="row center-align footerContentPerfil">
+			<div class="col s1 m4 l4">
+				<a href="#!">
+					<h6 class="footerPerfil">Condiciones</h6>
+				</a>
+			</div>
+			<div class="col s1 m4 l4">
+				<a href="#!">
+					<h6 class="footerPerfil politicas">Políticas</h6>
+				</a>
+			</div>
+			<div class="col s1 m4 l4">
+				<a href="#!">
+					<h6 class="footerPerfil">Valores</h6>
+				</a>
+			</div>
+		</div>
+	</li>
+</ul>
