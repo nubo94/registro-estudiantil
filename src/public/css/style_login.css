@@ -1,0 +1,130 @@
+body {
+	background: rgba(255, 255, 255, 5);
+}
+
+#particles-js {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+/* Login */
+.login_content {
+	padding: 40px 15px 30px 15px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	background: #fff;
+	border-radius: 10px;
+}
+
+/* Icon Login */
+#logo_login {
+	width: 50px;
+}
+
+/* Color input */
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label {
+	color: #00BFA5;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]) {
+	border-bottom: 1px solid #00BFA5;
+	-webkit-box-shadow: 0 1px 0 0 #00BFA5;
+	box-shadow: 0 1px 0 0 #00BFA5;
+}
+
+/* Boton */
+.btn_submit {
+	background-color: #fff;
+	color: rgb(141, 141, 141);
+}
+
+.btn_submit:hover {
+	color: #333;
+	background-color: #fff;
+}
+
+.btn:focus,
+.btn-large:focus,
+.btn-floating:focus {
+	background-color: #fff;
+}
+
+#arrow {
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+
+/* Registrate */
+.registrate > a {
+	position: relative;
+	top: 10px;
+	left: 5px;
+	color: rgb(128, 123, 123, 0.7);
+}
+
+.registrate > a:hover {
+	color: #333;
+	text-decoration-line: underline;
+}
+
+/* Footer Login */
+
+.footer_login {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#copyright{
+	font-size: 10px;
+	position: relative;
+	top: 20px;
+}
+
+#condiciones{
+	color: #333;
+}
+
+#condiciones:hover{
+	color: #000;
+	text-decoration-line: underline;
+}
+
+.background_div{
+	position: fixed;
+	height: 50%;
+	width: 100%;
+	background-color: #00897B;
+}
+
+.btn_send{
+	width: 100%;
+	margin: 0px;
+	height: 35px;
+}
+
+.comenzar{
+	color: rgb(141, 141, 141);
+	font-size: 11px;
+}
+
+.comenzar_hover{
+	color: rgb(141, 141, 141);
+}
+
+.comenzar_hover:hover{
+	color: #333;
+	text-decoration: underline;
+}
+
+.fileSingIn{
+	position: relative;
+	bottom: 15px;
+}

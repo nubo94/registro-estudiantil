@@ -1,0 +1,182 @@
+<section>
+	<nav class="search_person z-depth-0 hoverable">
+		<div class="row">
+			<div class="col s11 push-s2">
+				<div class="nav-wrapper">
+					<form method="post" action="/searchResult">
+						<div class="input-field">
+							<input id="search" type="search" placeholder="Buscar estudiante" name="buscar">
+							<label class="label-icon" for="search">
+								<i class="material-icons icon_search">
+									<img id="icon_btn" src="../../img/icon/icon_app/search.svg" alt="search-person">
+								</i>
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="row row_card_info_b">
+		<div class="col s3 m3 l3">
+			<div class="card">
+				<div class="card-content center-align">
+					<img class="responsive-img" id="image_info" src="../../img/images/yank.jpg" alt="">
+				</div>
+				<div class="card-tabs">
+					<ul class="tabs tabs-fixed-width">
+						<li class="tab">
+							<a class="active info_person tooltipped" data-position="bottom" data-delay="50" data-tooltip="Información Básica" href="#informacion_basica1">IB</a>
+						</li>
+						<li class="tab">
+							<a class="info_person tooltipped" data-position="bottom" data-delay="50" data-tooltip="Tipo de Sangre" href="#informacion_basica2">TS</a>
+						</li>
+					</ul>
+				</div>
+				<div class="card-content grey lighten-4">
+					<div id="informacion_basica1">
+						<p class="ib">Nombre: Yank Carlos</p>
+						<p class="ib">Apellido: Reyes Espinal</p>
+					</div>
+					<div id="informacion_basica2">
+						<p class="ib">A+</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Mas informacion -->
+		<div class="col s12 m4 l4">
+			<div>
+				<h4 class="title_info">Más información</h4>
+			</div>
+			<table class="z-depth-1 highlight responsive-table">
+				<thead>
+					<tr>
+						<th class="head_info tooltipped" data-position="right" data-delay="50" data-tooltip="Información Personal">INFO P</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Fecha de Nac</b>
+						</td>
+						<td class="content_info">30/06/1995</td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Edad</b>
+						</td>
+						<td class="content_info">22 años</td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Nacionalidad:</span></b>
+						</td>
+						<td class="content_info"><%= nacionalidad %></td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Lugar de Nac</b>
+						</td>
+						<td class="content_info">La romana, Rep Dominicana</td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Residencia</b>
+						</td>
+						<td class="content_info">Quisqueya N, Casa 31 #31</td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>
+								<img src="../../img/icon/icon_app/phone.svg" alt="phone">
+							</b>
+						</td>
+						<td class="content_info">(+1)829-359-8098 | 809-550-1765</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="contacto">
+				<div>
+					<h5 class="title_info">Contactos</h5>
+				</div>
+				<div class="col s12 m12 l12 z-depth-1">
+					<img class="redes_sociales tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github" src="../../img/icon/icon_app/github.svg"
+					 alt="github">
+					<img class="redes_sociales tooltipped" data-position="bottom" data-delay="50" data-tooltip="Slack" src="../../img/icon/icon_app/slack.svg"
+					 alt="slack">
+					<img class="redes_sociales tooltipped" data-position="bottom" data-delay="50" data-tooltip="Instagram" src="../../img/icon/icon_app/instagram.svg"
+					 alt="instagram">
+					<img class="redes_sociales tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter" src="../../img/icon/icon_app/twitter.svg"
+					 alt="twitter">
+					<img class="redes_sociales tooltipped" data-position="bottom" data-delay="50" data-tooltip="Facebook" src="../../img/icon/icon_app/facebook.svg"
+					 alt="facebook">
+					<img class="redes_sociales tooltipped" data-position="bottom" data-delay="50" data-tooltip="Email" src="../../img/icon/icon_app/mail.svg"
+					 alt="email">
+				</div>
+			</div>
+		</div>
+
+		<!-- Informacion estudiantil -->
+		<div class="col s12 m5 l5">
+			<div>
+				<h4 class="title_info">Información Estudiantil</h4>
+			</div>
+			<table class="z-depth-1 highlight responsive-table">
+				<thead>
+					<tr>
+						<th class="head_info tooltipped" data-position="right" data-delay="50" data-tooltip="Información por parte de la institución">INFO I</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Matrícula</b>
+						</td>
+						<td class="content_info">14-MISN-2-016</td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Estado civil</b>
+						</td>
+						<td class="content_info">Comprometido</td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Genero</b>
+						</td>
+						<td class="content_info">Hombre</td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Carrera</b>
+						</td>
+						<td class="content_info">Ing. Software</td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Materias cursando</b>
+						</td>
+						<td class="content_info">Calculo Integral, Proyecto de Ingenieria de sistemas, Ingenieria de Software, Simulación de Sistemas</td>
+					</tr>
+					<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Tanda</b>
+						</td>
+						<td class="content_info">Nocturna</td>
+					</tr>
+						<tr class="columnas_tablas">
+						<td class="content_info">
+							<b>Estado</b>
+						</td>
+						<td class="content_info">Activo</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
